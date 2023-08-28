@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@100&display=swap");
+
+:root {
+  /*light-colors*/
+  --primary-light: #c7ecf7;
+  --secondary-light: #7a9ffb;
+  --text-background: #ffb4e5c0;
+
+  /*dark-colors*/
+  --main-black: #140f07;
+
+  /*box-shadow*/
+  --shadow-color: 2px 79px 126px 14px rgba(132, 209, 235, 1);
+
+  /*font-family*/
+  --poppins: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--poppins);
+}
+
+h1 {
+  font-size: 50px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  text-align: center;
+  color: var(--secondary-light);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-info,
+.secondary-info {
+  background-color: var(--text-background);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.secondary-page,
+.weather-page {
+  background-color: var(--text-background);
+  color: var(--main-black);
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  box-shadow: var(--shadow-color);
+}
+
+.contact-info {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.mail-source {
+  text-decoration: none;
+  color: var(--secondary-light);
+}
+
+.back-home {
+  background-color: var(--primary-light);
+  color: var(--main-black);
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+}
+
+.home-box {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
