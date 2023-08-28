@@ -1,78 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@100&display=swap");
 
 :root {
-  /*light-colors*/
-  --primary-light: #c7ecf7;
-  --secondary-light: #7a9ffb;
-  --text-background: #ffb4e5c0;
-
-  /*dark-colors*/
-  --main-black: #140f07;
-
-  /*box-shadow*/
-  --shadow-color: 2px 79px 126px 14px rgba(132, 209, 235, 1);
-
-  /*font-family*/
-  --poppins: "Poppins", sans-serif;
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  font-family: var(--poppins);
+  margin-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 h1 {
-  font-size: 50px;
-  padding-bottom: 15px;
-  padding-top: 20px;
-  text-align: center;
-  color: var(--secondary-light);
+  font-size: 96px;
 }
 
-.flex-container {
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.navigation-links {
   display: flex;
+  margin-top: 40px;
   justify-content: center;
 }
 
-.primary-info,
-.secondary-info {
-  background-color: var(--text-background);
-  padding: 20px;
-  border-radius: 20px;
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
   margin: 10px;
 }
 
-.secondary-page,
-.weather-page {
-  background-color: var(--text-background);
-  color: var(--main-black);
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
   text-decoration: none;
-  padding: 15px 20px;
-  border-radius: 25px;
-  box-shadow: var(--shadow-color);
 }
 
-.contact-info {
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.mail-source {
-  text-decoration: none;
-  color: var(--secondary-light);
-}
-
-.back-home {
-  background-color: var(--primary-light);
-  color: var(--main-black);
-  text-decoration: none;
-  padding: 15px 20px;
-  border-radius: 25px;
-}
-
-.home-box {
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
+.email-link:hover {
+  text-decoration: underline;
 }
