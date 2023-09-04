@@ -1,13 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;400&family=Raleway:wght@100&family=Roboto+Mono:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;300;400&family=Raleway:wght@100&family=Roboto+Mono&display=swap");
 
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #fe4800;
+  --secondary-color: #060212;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  background-color: #353535;
+  color: aliceblue;
 }
 
 h1,
@@ -54,6 +58,10 @@ p {
   color: white;
 }
 
+.primary-link:hover{
+  color: #762900;
+}
+
 .secondary-link {
   border-radius: 30px;
   padding: 20px 15px;
@@ -61,6 +69,10 @@ p {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.secondary-link:hover{
+  color: #fbde00;
 }
 
 .homepage-link {
@@ -87,4 +99,9 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+  color: #fbce00;
+}
+
+.country-location{
+  color: #fe4800;
 }
