@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;300;400&family=Raleway:wght@100&family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;300;400&family=Raleway:wght@100&family=Roboto+Mono&display=swap');
 
 :root {
-  --primary-color: #fe4800;
+  --primary-color: #68a225;
   --secondary-color: #060212;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
   margin: 100px;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   background-color: #353535;
   color: aliceblue;
@@ -49,7 +49,8 @@ p {
 }
 
 .primary-link {
-  border-radius: 30px;
+  border-radius: 50px;
+  font-weight: 500;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
@@ -59,7 +60,7 @@ p {
 }
 
 .primary-link:hover{
-  color: #762900;
+  color: #1e4700;
 }
 
 .secondary-link {
@@ -72,7 +73,7 @@ p {
 }
 
 .secondary-link:hover{
-  color: #fbde00;
+  color: #fdffff;
 }
 
 .homepage-link {
@@ -103,5 +104,5 @@ p {
 }
 
 .country-location{
-  color: #fe4800;
+  color: #2cb000;
 }
